@@ -1,0 +1,28 @@
+<div>
+    Hi {{emailTo}} team,
+    <div>
+        <br>
+    </div>
+    <div>We have important information for you. </div>
+    <div>
+        <br>
+    </div>
+    {{#notifications}}
+    <div>
+        <b>{{data.useCase}}</b>
+        <i></i>
+    </div>
+    <div>
+        <ul>
+            {{#matches}}
+            <li>{{> itemTemplate}}</li>
+            {{/matches}}
+        </ul>
+    </div>
+    {{/notifications}}
+    <p>You can find detailed information <a href="{{fileUrl}}"> here.</a><b>Please take action on each case when required.</b> </p>
+    <div>
+        <br>
+    </div>
+    <div>Thank you</div>
+</div>

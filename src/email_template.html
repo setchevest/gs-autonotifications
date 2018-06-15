@@ -1,0 +1,18 @@
+<div>
+    Hi {{emailTo}},
+    <div><br></div>
+    <div>We have important information for you.</div>
+    <div><br></div>
+    {{#notifications}}
+    <div><b>{{data.useCase}}</b><i>({{data.filter}})</i></div>
+    <div>
+        <ul>
+            {{#matches}}
+            <li>{{> itemTemplate}}</li>
+            {{/matches}}
+        </ul>
+    </div>
+    {{/notifications}}
+    <div><br></div>
+    <div>Thank you</div>
+</div>
